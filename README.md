@@ -1,1 +1,3 @@
-# github
+# maven-project
+
+Simple Maven Project
