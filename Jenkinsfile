@@ -19,7 +19,7 @@ pipeline {
          sh 'bash owasp-dependency-check.sh'
          //sh 'cat /var/lib/jenkins/OWASP-Dependency-Check/reports/dependency-check-report.xml'
         
-        publishHTML([allowMissing: true, alwaysLinkToLastBuild: true, includes: '**/*.html', keepAll: true, reportDir: '/report', reportFiles: 'dependency-check-report.html', reportName: 'HTML Report', reportTitles: ''])
+        publishHTML([allowMissing: true, alwaysLinkToLastBuild: true, includes: '**/*.html', keepAll: true, reportDir: 'report', reportFiles: 'dependency-check-report.html', reportName: 'HTML Report', reportTitles: ''])
       }
     }
       }
